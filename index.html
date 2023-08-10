@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poochcare Animals and pets – Just another RoverThemes Demo Sites site
+  </title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Google font -->
+  <link href="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/css/style-liberty.css"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Boostrap 4.6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!-- OWL CAROUSEL -->
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+  <!-- Thư viện animation -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body id="myBody">
+  <header id="site-header" class="main-header fixed-top">
+
+    <nav class="container navbar navbar-expand-lg">
+      <!-- Logo -->
+      <h1>
+        <a class="navbar-brand" href="#">Pooch Care</a>
+      </h1>
+
+      <!-- Toggle Button -->
+      <!-- <button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+      <button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse"
+        data-target="#portNavbar" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
+        <!-- khi chưa bấm là 3 vạch trắng, bấm vô sẽ ra dấu X trắng -->
+        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+      </button>
+      <!-- NavBar -->
+      <div class="collapse navbar-collapse" id="portNavbar">
+        <!-- NavBar -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Blog Posts</a>
+              <a class="dropdown-item" href="#">Landing page</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <!-- Search button and search form -->
+        <ul class="navbar-nav search-right mt-lg-0 mt-2">
+          <li class="nav-item HeaderSearch" title="Search">
+            <a href="#search" class="btn search-search">
+              <span class="fa fa-search" aria-hidden="true"></span>
+            </a>
+            <!-- search search-popup -->
+            <div id="search" class="pop-overlay">
+              <div class="search-popup">
+                <form action="https://wp.w3layouts.com/poochcare/" method="get" class="d-sm-flex">
+
+                  <input type="search" name="s" placeholder="Search.." required="required" autofocus="">
+
+                  <button type="submit">Search</button>
+                  <a class="close" href="#url">×</a>
+                </form>
+              </div>
+            </div>
+            <!-- /search search-popup -->
+          </li>
+        </ul>
+        <!-- toggle switch for light and dark theme -->
+      </div>
+
+      <div class="mobile-position DarkandLight">
+        <nav class="navigation">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <button class="btn" id="switchButton" title="Click to switch theme">
+                <i class="gg-sun"></i>
+                <i class="gg-moon"></i>
+              </button>
+            </label>
+          </div>
+        </nav>
+      </div>
+
+
+
+    </nav>
+  </header>
+
+  <!-- CAROUSEL -->
+  <section class="poochCareCarousel">
+    <!-- data-ride là cái khiến slide chạy tự động, muốn xem code thì tắt nó -->
+    <!-- data-ride="carousel" -->
+    <div id="poochCarousel" class="carousel slide" data-ride="carousel">
+      <!-- là những đường gạch bên dưới -->
+      <!-- cái nội dung cần quan tâm nhiều nhất là id trong data-target -->
+      <ol class="carousel-indicators">
+        <!-- cái class có active thì khi load trang sẽ hiện lên đầu tiên -->
+        <li data-target="#poochCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#poochCarousel" data-slide-to="1"></li>
+        <li data-target="#poochCarousel" data-slide-to="2"></li>
+        <li data-target="#poochCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- cái class có active thì khi load trang sẽ hiện lên đầu tiên -->
+        <div class="carousel-item active">
+          <!-- alt thì nên trao đổi với khách hàng vì nó ảnh hưởng tới SEO khi tìm kiếm -->
+          <img src="./img/banner1.jpg" class="d-block w-100" alt="banner1">
+          <div class="carousel-container1 carousel-caption d-none d-md-block ">
+            <div class="carousel-wrap">
+              <h1>Quantity Things For Loving Pets</h1>
+              <p>Keep Your Pet Smiling</p>
+              <!-- lấy btn của BS để ko cần phải sửa những thứ lặt vặt nữa -->
+              <button type="button" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Read more</button>
+              <button type="button" class="btn  mt-sm-5 mt-4 mr-2">Contact Us</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- alt thì nên trao đổi với khách hàng vì nó ảnh hưởng tới SEO khi tìm kiếm -->
+          <img src="./img/banner2.jpg" class="d-block w-100" alt="banner2">
+          <div class="carousel-container2 carousel-caption d-none d-md-block">
+            <div class="carousel-wrap ml-lg-auto">
+              <h1>Delivering Happiness For Pets</h1>
+              <p>We Heklp Your Project</p>
+              <!-- lấy btn của BS để ko cần phải sửa những thứ lặt vặt nữa -->
+              <button type="button" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Read more</button>
+              <button type="button" class="btn  mt-sm-5 mt-4 mr-2">Contact Us</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- alt thì nên trao đổi với khách hàng vì nó ảnh hưởng tới SEO khi tìm kiếm -->
+          <img src="./img/banner1.jpg" class="d-block w-100" alt="banner3">
+          <div class="carousel-container1 carousel-caption d-none d-md-block">
+            <div class="carousel-wrap">
+              <h1>Quantity Things For Loving Pets</h1>
+              <p>Keep Your Pet Smiling</p>
+              <!-- lấy btn của BS để ko cần phải sửa những thứ lặt vặt nữa -->
+              <button type="button" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Read more</button>
+              <button type="button" class="btn  mt-sm-5 mt-4 mr-2">Contact Us</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- alt thì nên trao đổi với khách hàng vì nó ảnh hưởng tới SEO khi tìm kiếm -->
+          <img src="./img/banner1.jpg" class="d-block w-100" alt="banner4">
+          <div class="carousel-container2 carousel-caption d-none d-md-block">
+            <div class="carousel-wrap ml-lg-auto">
+              <h1>Delivering Happiness For Pets</h1>
+              <p>We Heklp Your Project</p>
+              <!-- lấy btn của BS để ko cần phải sửa những thứ lặt vặt nữa -->
+              <button type="button" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Read more</button>
+              <button type="button" class="btn  mt-sm-5 mt-4 mr-2">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT US -->
+  <section class="aboutUs" id="aboutUs">
+    <div class="container py-md-5 py-3">
+      <div class="bottom-ab-grids align-items-center">
+        <div class="bottom-ab-left">
+          <h6 class="sub-title HPAbout">
+            About Us
+          </h6>
+          <h3 class="hny-title">
+            We love your pets like they are our own
+          </h3>
+          <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio
+            voluptatem
+            tenetur consequatur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia Curae;
+            Nulla mollis dapibus nunc, ut rhoncus
+            turpis sodales quis.
+          </p>
+          <a href="#url" class="read">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICE -->
+  <section class="service py-5" id="service">
+    <!-- cái container để tạo khoảng trống 2 bên của trang -->
+    <!-- class text-center để cho chữ vào giữa -->
+    <div class="service__content container pt-lg-5 pt-md-4 ">
+      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="pills-home-tab">
+        <!-- B1: tạo hàng -->
+        <div class="row">
+          <!-- B2: tạo cột -->
+          <!-- .col-* -->
+          <!-- chỉ số 1-12 (quy định của BS có 12 cột), cách tính chỉ số: 12/3 = 4 -->
+          <!-- tạo margin bằng my -->
+          <!-- class màn hình của BS là min-width
+                        các màn hình có kích thước liền kề nhau và có chung chỉ số của col thì giữ lại class màn hình nhỏ nhất, xóa các clas lớn hơn
+                        -->
+          <div class="col-lg-4 col-sm-6 grids-feature">
+            <div class="card">
+              <div class="icon">
+                <span class="fa fa-snowflake-o"></span>
+              </div>
+              <h4><a href="#url" class="title-head">
+                  Dog Walking</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+                blandit eu leo.
+              </p>
+              <a href="#url" class="read">
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 .grids-feature">
+            <div class="card">
+              <div class="icon">
+                <span class="fa fa-snowflake-o"></span>
+              </div>
+              <h4><a href="#url" class="title-head">
+                  Healthy Meals</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+                blandit eu leo.
+              </p>
+              <a href="#url" class="read">
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 .grids-feature">
+            <div class="card">
+              <div class="icon">
+                <span class="fa fa-snowflake-o"></span>
+              </div>
+              <h4><a href="#url" class="title-head">
+                  Pet Sitting</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+                blandit eu leo.
+              </p>
+              <a href="#url" class="read">
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 .grids-feature">
+            <div class="card">
+              <div class="icon">
+                <span class="fa fa-snowflake-o"></span>
+              </div>
+              <h4><a href="#url" class="title-head">
+                  Dog Activities</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+                blandit eu leo.
+              </p>
+              <a href="#url" class="read">
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 .grids-feature">
+            <div class="card">
+              <div class="icon">
+                <span class="fa fa-snowflake-o"></span>
+              </div>
+              <h4><a href="#url" class="title-head">
+                  Pet Daycare</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+                blandit eu leo.
+              </p>
+              <a href="#url" class="read">
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 .grids-feature">
+            <div class="card">
+              <div class="icon">
+                <span class="fa fa-snowflake-o"></span>
+              </div>
+              <h4><a href="#url" class="title-head">
+                  Pet Grooming</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+                blandit eu leo.
+              </p>
+              <a href="#url" class="read">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div id="experience" class="py-5">
+      <div class="container py-md-5 py-3 HPCWP">
+        <div class="cwp4-two row">
+          <div class="cwp4-image col-lg-6 pl-lg-5 mb-lg-0 mb-5">
+            <img src="./img/ab.jpg" alt="#" class="img-fluid">
+          </div>
+
+          <div class="cwp4-text col-lg-6">
+            <h6 class="sub-title">
+              Why Choose Us </h6>
+            <h3 class="hny-title">
+              What We Offer for You </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicingelit. </p>
+
+            <ul class="cont-4">
+              <li><span class="fa fa-check"></span>Certified Groomer </li>
+              <li><span class="fa fa-check"></span>10 Years of Experience </li>
+              <li><span class="fa fa-check"></span>Pet Lover </li>
+              <li><span class="fa fa-check"></span>Customer Supports </li>
+              <li><span class="fa fa-check"></span>Veterinary Help </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NUMBER -->
+  <section class="number py-5" id="number">
+    <div class="container py-lg-0 py-3">
+      <div class="row pb-lg-3 number__content">
+        <div class="number__item col-lg-3 col-6 stats_info counter_grid">
+          <p>
+            <span class="counter">730</span>
+          </p>
+          <h4>Happy Clients</h4>
+        </div>
+        <div class="number__item col-lg-3 col-6 stats_info counter_grid">
+          <p>
+            <span class="counter">80</span>
+          </p>
+          <h4>Professionals</h4>
+        </div>
+        <div class="number__item col-lg-3 col-6 stats_info counter_grid">
+          <p>
+            <span class="counter">812</span>
+          </p>
+          <h4>Adopted Pets</h4>
+        </div>
+        <div class="number__item col-lg-3 col-6 stats_info counter_grid">
+          <p>
+            <span class="counter">90</span>
+          </p>
+          <h4>Awards</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- thư viện Jquery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <!-- Thư viện iconify -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!-- OWN CAROUSEL
+  <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
+
+  <!-- Thư viện Jquery Waypoint, cái này phải để phía dưới Jquery -->
+    <!-- Ở đây sd đường dẫn CDN chứ ko tải về -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous">
+        </script>
+
+    <!-- Thư viện Count up JS -->
+    <script src="./js/jquery.countup.js"></script>
+    <!-- Javascript internal, viết code JS trong CODE HTML, nên mình phải để bên trong JS, dấu $ là của Jquery chứ ko phải của JS -->
+    <!-- ('.counter') nghĩa là tìm tất cả các thẻ có tên là counter -->
+    <!-- countUp() là để gọi hàm để chạy, hàm này đc định nghĩa trong jquery.countup.js -->
+    <script>
+        $('.counter').countUp({
+            'time': 2000,
+            'delay': 10
+        });
+    </script>
+
+  <!-- Main JS -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
