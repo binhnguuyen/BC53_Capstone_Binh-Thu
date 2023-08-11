@@ -408,6 +408,17 @@ header .fixed-top {
     margin-bottom: 30px;
 }
 
+/* #service .card a.read {
+    border-bottom: none;
+}
+
+#service .card a.read::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #189A46;
+    display: block;
+} */
 
 
 
@@ -636,7 +647,7 @@ h1, h2, h3, h4, h5 {
 
 .dark .read {
     color: white;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .read:hover {
