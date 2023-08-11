@@ -538,7 +538,7 @@ h1, h2, h3, h4, h5 {
 /* Dark Theme*/
 /* thêm class dark xong mình vừa gọi id vừa gọi class nên phải viết dính liền lại */
 .dark#myBody {
-    background-color: black;
+    background-color: #151515;
 }
 
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5 {
@@ -577,11 +577,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .dark#site-header {
-    background-color: black;
+    background-color: #151515;
 }
 
 .dark .container {
-    background-color: black;
+    background-color: #151515;
 }
 
 .dark #service, .dark #service .container {
@@ -592,6 +592,30 @@ h1, h2, h3, h4, h5 {
 /* .dark #portNavbar .gg-sun {
     color: #404040; 
 } */
+
+.dark #portNavbar .dropdown-menu {
+    border-radius: 10px;
+    background: #151515;
+    border: 1px solid #333;
+    min-width: 13rem;
+    padding: 1rem 0 0.3rem;
+}
+
+.dark #portNavbar .dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.dark #portNavbar .dropdown-menu .dropdown-item:hover {
+    background: #151515;
+    color: #189A46;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    background: #151515;
+    border: 1px solid #333;
+    border-right: none;
+    border-bottom: none;
+}
 
 .dark #portNavbar .nav-link {
     color: #ddd;
@@ -605,7 +629,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .dark #switchButton {
-    background-color: black;
+    background-color: #151515;
     /* border: 1px solid black; */
 }
 
@@ -622,7 +646,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .dark .card {
-    background-color: black;
+    background-color: #151515;
     color: white;
     border: 1px solid white;
 }
