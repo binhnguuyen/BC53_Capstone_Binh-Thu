@@ -256,9 +256,10 @@
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
                 blandit eu leo.
               </p>
-              <a href="#url" class="read">
-                Read More
-              </a>
+              <!-- ban đầu thẻ a ko nằm trong span, đường gạch dưới kéo dài từ đầu này qua đầu kia nên bỏ vào span -->
+              <span><a href="#url" class="read">
+                  Read More
+                </a></span>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 .grids-feature">
@@ -273,9 +274,11 @@
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
                 blandit eu leo.
               </p>
-              <a href="#url" class="read">
-                Read More
-              </a>
+              </p>
+              <!-- ban đầu thẻ a ko nằm trong span, đường gạch dưới kéo dài từ đầu này qua đầu kia nên bỏ vào span -->
+              <span><a href="#url" class="read">
+                  Read More
+                </a></span>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 .grids-feature">
@@ -290,9 +293,11 @@
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
                 blandit eu leo.
               </p>
-              <a href="#url" class="read">
-                Read More
-              </a>
+              </p>
+              <!-- ban đầu thẻ a ko nằm trong span, đường gạch dưới kéo dài từ đầu này qua đầu kia nên bỏ vào span -->
+              <span><a href="#url" class="read">
+                  Read More
+                </a></span>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 .grids-feature">
@@ -307,9 +312,11 @@
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
                 blandit eu leo.
               </p>
-              <a href="#url" class="read">
-                Read More
-              </a>
+              </p>
+              <!-- ban đầu thẻ a ko nằm trong span, đường gạch dưới kéo dài từ đầu này qua đầu kia nên bỏ vào span -->
+              <span><a href="#url" class="read">
+                  Read More
+                </a></span>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 .grids-feature">
@@ -324,9 +331,11 @@
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
                 blandit eu leo.
               </p>
-              <a href="#url" class="read">
-                Read More
-              </a>
+              </p>
+              <!-- ban đầu thẻ a ko nằm trong span, đường gạch dưới kéo dài từ đầu này qua đầu kia nên bỏ vào span -->
+              <span><a href="#url" class="read">
+                  Read More
+                </a></span>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 .grids-feature">
@@ -341,9 +350,11 @@
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
                 blandit eu leo.
               </p>
-              <a href="#url" class="read">
-                Read More
-              </a>
+              </p>
+              <!-- ban đầu thẻ a ko nằm trong span, đường gạch dưới kéo dài từ đầu này qua đầu kia nên bỏ vào span -->
+              <span><a href="#url" class="read">
+                  Read More
+                </a></span>
             </div>
           </div>
         </div>
@@ -440,23 +451,23 @@
   <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
 
   <!-- Thư viện Jquery Waypoint, cái này phải để phía dưới Jquery -->
-    <!-- Ở đây sd đường dẫn CDN chứ ko tải về -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-        crossorigin="anonymous">
-        </script>
-
-    <!-- Thư viện Count up JS -->
-    <script src="./js/jquery.countup.js"></script>
-    <!-- Javascript internal, viết code JS trong CODE HTML, nên mình phải để bên trong JS, dấu $ là của Jquery chứ ko phải của JS -->
-    <!-- ('.counter') nghĩa là tìm tất cả các thẻ có tên là counter -->
-    <!-- countUp() là để gọi hàm để chạy, hàm này đc định nghĩa trong jquery.countup.js -->
-    <script>
-        $('.counter').countUp({
-            'time': 2000,
-            'delay': 10
-        });
+  <!-- Ở đây sd đường dẫn CDN chứ ko tải về -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous">
     </script>
+
+  <!-- Thư viện Count up JS -->
+  <script src="./js/jquery.countup.js"></script>
+  <!-- Javascript internal, viết code JS trong CODE HTML, nên mình phải để bên trong JS, dấu $ là của Jquery chứ ko phải của JS -->
+  <!-- ('.counter') nghĩa là tìm tất cả các thẻ có tên là counter -->
+  <!-- countUp() là để gọi hàm để chạy, hàm này đc định nghĩa trong jquery.countup.js -->
+  <script>
+    $('.counter').countUp({
+      'time': 2000,
+      'delay': 10
+    });
+  </script>
 
   <!-- Main JS -->
   <script src="./js/index.js"></script>
