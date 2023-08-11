@@ -518,7 +518,7 @@ header .fixed-top {
 }
 
 .container {
-    /* background-color: white; */
+    background-color: transparent;
 }
 
 h1, h2, h3, h4, h5 {
@@ -551,6 +551,10 @@ h1, h2, h3, h4, h5 {
 /* thêm class dark xong mình vừa gọi id vừa gọi class nên phải viết dính liền lại */
 .dark#myBody {
     background-color: #151515;
+}
+
+.dark #poochCarousel .container {
+    background-color:transparent;
 }
 
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5 {
