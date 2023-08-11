@@ -268,31 +268,50 @@ header .fixed-top {
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: #0c0c0c;
-    opacity: .6;
+    background-color: hsla(0, 0%, 5%, 0.6);
+}
+
+#poochCarousel .carousel-item>img {
+    /* height: 100%; */
+    /* Cách làm hình ảnh tự đông cắt giảm khi chiều ngang màn hình nhỏ lại, dài ra khi màn hình dài ra */
+    /* object-fit: cover;
+    filter: brightness(50%) grayscale(30%); */
 }
 
 #poochCarousel .carousel-indicators li {
-    z-index: 2;
     height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    /* background-color: white; */
+    width: 10px !important;
+    /* phải cho border nếu ko thì border-radius ko hoạt động theo ý muốn */
+    border: 0;
+    border-radius: 10px;
+    /* color: white !important; */
+    /* background-color: white !important; */
     margin-right: 10px;
+    opacity: 1;
 }
 
 #poochCarousel .carousel-indicators li:hover {
-    width: 30px;
-    /* border-radius: 5px; */
-    background-color: #35a22c;
-    border-radius: 5px;
+    width: 30px !important;
+    /* phải cho border nếu ko thì border-radius ko hoạt động theo ý muốn */
+    border: 0;
+    /* border: 1px solid #35a22c; */
+    background-color: #35a22c !important;
 }
 
-#poochCarousel .carousel-indicators .active {
-    width: 30px;
-    /* border-radius: 5px; */
-    background-color: #35a22c;
-    border-radius: 50%;
+#poochCarousel .carousel-indicators li.active {
+    width: 30px !important;
+    /* phải cho border nếu ko thì border-radius ko hoạt động theo ý muốn */
+    border: 0;
+    /* border: 1px solid #35a22c; */
+    background-color: #35a22c !important;
+}
+
+#poochCarousel .carousel-indicators li:first-child {
+    width: 30px !important;
+    /* phải cho border nếu ko thì border-radius ko hoạt động theo ý muốn */
+    border: 0;
+    /* border: 1px solid #35a22c; */
+    background-color: #35a22c !important;
 }
 
 
