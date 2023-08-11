@@ -721,6 +721,7 @@ div#small-dialog iframe {
     border-radius: 10px;
     margin: 0 10px;
     width: 515px;
+    margin: auto;
 }
 
 .feedback_content {
@@ -819,6 +820,7 @@ div#small-dialog iframe {
 .info_content h5 {
     color: white;
     font-weight: 700;
+    padding-bottom: 20px;
 }
 
 .info_content a {
