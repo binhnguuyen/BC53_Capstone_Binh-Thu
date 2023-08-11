@@ -1140,8 +1140,13 @@ h1, h2, h3, h4, h5 {
     color: #696969; 
 }
 
+.dark #plans .card_title h4 {
+    color: #189A46;
+}
 
-
+.dark #plans .standard_title .save_10 {
+    color: #189A46;
+}
 
 
 
