@@ -372,6 +372,8 @@ header .fixed-top {
 
 #service .card:hover {
     background: var(--bg-light);
+    /* do BS có phần transform:  theo trục y -0.5rem nên phải xoá */
+    transform: translateY(0);
 }
 
 #service .fa {
@@ -405,6 +407,7 @@ header .fixed-top {
 #service .service__content .grids-feature{
     margin-bottom: 30px;
 }
+
 
 
 
