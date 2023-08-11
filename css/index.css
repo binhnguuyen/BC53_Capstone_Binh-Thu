@@ -545,6 +545,7 @@ header .fixed-top {
     background-color: #f9f8ff;
     padding-top: 40px;
     padding-bottom: 100px;
+    text-align: center;
 }
 
 .card {
@@ -645,6 +646,7 @@ header .fixed-top {
 .about {
     padding-top: 80px;
     padding-bottom: 80px;
+    text-align: center;
 }
 
 #small-dialog {
@@ -708,6 +710,7 @@ div#small-dialog iframe {
 .feedback {
     background-color: #faf8fe;
     padding: 50px 0;
+    text-align: center;
 }
 
 .feedback_item {
@@ -723,6 +726,7 @@ div#small-dialog iframe {
 .feedback_content {
     text-align: left;
     padding: 30px;
+    color: #696969;
 }
 
 .feedback_footer {
@@ -759,6 +763,9 @@ div#small-dialog iframe {
     margin-bottom: 0;
 }
 
+.address{
+    color: #696969;
+}
 .feedback_content blockquote q::before {
     font-family: 'Merriweather', serif;
     color: #189a46;
@@ -804,7 +811,9 @@ div#small-dialog iframe {
 .footer {
     background-color: #111;
     color: #696969;
-    padding: 60px;
+    padding: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info_content h5 {
@@ -814,6 +823,10 @@ div#small-dialog iframe {
 
 .info_content a {
     color: #696969;
+    /* display: block; */
+}
+.display_block a{
+    display: block;
 }
 
 .info_content .item {
@@ -1161,6 +1174,7 @@ h1, h2, h3, h4, h5 {
         font-size: 52px;
         line-height: 62px;
     } 
+}
 @media screen and (max-width: 575.98px) { 
     .card-columns {column-count: 1;}
     
