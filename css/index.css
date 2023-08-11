@@ -179,29 +179,21 @@ header .fixed-top {
     height: 100vh;
 }
 
-#poochCarousel .carousel-container1 {
-    width: 75vw;
-    text-align: left;
-    display: flex;
-    /* justify-content: flex-start; */
-}
-
-#poochCarousel .carousel-container2 {
-    width: 75vw;
-    text-align: left;
-    display: flex;
-    /* justify-content: flex-end; */
+#poochCarousel h1 {
+    font-size: 20vw;
 }
 
 
 #poochCarousel .carousel-wrap {
-    width: 70%;
+    max-width: 50%;
+    text-align: left;
 }
 
 .carousel-item>img {
     height: 100%;
     /* Cách làm hình ảnh tự đông cắt giảm khi chiều ngang màn hình nhỏ lại, dài ra khi màn hình dài ra */
     object-fit: cover;
+    /* transform: translateY(-200px); */
     /* filter: brightness(60%) grayscale(30%); */
 }
 
@@ -223,6 +215,10 @@ header .fixed-top {
     left: 50%;
     /* đây là cách cho vô giữa hộp của .carousel-caption */
     transform: translate( -50%, -50% );
+    text-align: left;
+
+
+    /* width: 100%; */
 }
 
 
@@ -279,12 +275,6 @@ header .fixed-top {
     background-color: hsla(0, 0%, 5%, 0.6);
 }
 
-#poochCarousel .carousel-item>img {
-    /* height: 100%; */
-    /* Cách làm hình ảnh tự đông cắt giảm khi chiều ngang màn hình nhỏ lại, dài ra khi màn hình dài ra */
-    /* object-fit: cover;
-    filter: brightness(50%) grayscale(30%); */
-}
 
 #poochCarousel .carousel-indicators li {
     height: 10px;
@@ -528,7 +518,7 @@ header .fixed-top {
 }
 
 .container {
-    background-color: white;
+    /* background-color: white; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -738,15 +728,31 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media screen and (max-width: 575.98px) { 
-    
+@media screen and (max-width: 477.98px) { 
+    #poochCarousel .carousel-caption h1 {
+        font-size: 32px;
+        line-height: 42px;
+    } 
+}
+@media screen and (min-width: 478px) and (max-width: 991.98px) { 
+    #poochCarousel .carousel-caption h1 {
+        font-size: 50px;
+        line-height: 55px;
+    } 
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    #poochCarousel .carousel-caption h1 {
+        font-size: 52px;
+        line-height: 62px;
+    } 
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 767.98px) { 
     .container {
         max-width: 540px;
-    }    
+    }
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -770,6 +776,7 @@ h1, h2, h3, h4, h5 {
         margin-right: auto;
         margin-left: auto;
     } 
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
