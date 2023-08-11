@@ -1030,6 +1030,18 @@ h1, h2, h3, h4, h5 {
     background-color: #222;
 }
 
+.dark .container.navbar {
+    background-color: #151515;
+}
+
+.dark .aboutUs .container {
+    background-color: #151515;
+}
+
+.dark .experience .container {
+    background-color: #151515;
+}
+
 .dark .about .container {
     background-color: #151515;
 }
