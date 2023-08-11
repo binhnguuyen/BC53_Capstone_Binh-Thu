@@ -624,6 +624,11 @@ h1, h2, h3, h4, h5 {
 
 .thu_container {
     text-align: center;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .thu_title {
@@ -753,13 +758,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-.card-columns {
-@include media-breakpoint-up(xs) { column-count: 1; }
-@include media-breakpoint-up(sm) { column-count: 1;}
-@include media-breakpoint-up(md) { column-count: 1; }
-@include media-breakpoint-up(lg) { column-count: 3; }
-@include media-breakpoint-up(xl) {column-count: 3;}
-}
+
 
 /* About */
 /* Video popup */
@@ -1040,34 +1039,8 @@ div#small-dialog iframe {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 992px) {
-    .container {
+    .container .thu_container {
         max-width: 960px;
         margin-right: auto;
         margin-left: auto;
@@ -1080,19 +1053,21 @@ div#small-dialog iframe {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) { 
+    .card-columns {column-count: 1;}
     
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 767.98px) { 
-    .container {
+    .container .thu_container{
         max-width: 540px;
     }    
+    .card-columns {column-count: 1;}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 991.98px) { 
-    .container {
+    .container .thu_container {
         max-width: 720px;
     }
     .navbar-toggler-icon.fa {
@@ -1102,23 +1077,26 @@ div#small-dialog iframe {
         background-color: var(--primary-color);
         border-radius: 5px;
     }
+    .card-columns {column-count: 1;}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1199.98px) { 
-    .container {
+    .container .thu_container{
         max-width: 960px;
         margin-right: auto;
         margin-left: auto;
     } 
+    .card-columns {column-count: 3;}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) { 
-    .container {
+    .container .thu_container{
         max-width: 1140px;
         margin-right: auto;
         margin-left: auto;
     }
+    .card-columns {column-count: 3;}
     
 }
