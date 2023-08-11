@@ -502,14 +502,14 @@ header .fixed-top {
 }
 
 
-.thu_container {
+/* .container {
     text-align: center;
     width: 80%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
 .thu_title {
     margin-bottom: 80px;
@@ -1109,7 +1109,7 @@ h1, h2, h3, h4, h5 {
     background-color: #222;
 }
 
-.dark .plans .thu_container .card {
+.dark .plans .container .card {
     border: 0;
 }
 
@@ -1132,7 +1132,7 @@ h1, h2, h3, h4, h5 {
 
 
 @media screen and (min-width: 992px) {
-    .container .thu_container {
+    .container {
         max-width: 960px;
         margin-right: auto;
         margin-left: auto;
@@ -1168,7 +1168,7 @@ h1, h2, h3, h4, h5 {
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 767.98px) { 
-    .container .thu_container{
+    .container {
         max-width: 540px;
     }
         
@@ -1177,7 +1177,7 @@ h1, h2, h3, h4, h5 {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 991.98px) { 
-    .container .thu_container {
+    .container {
         max-width: 720px;
     }
     .navbar-toggler-icon.fa {
@@ -1192,7 +1192,7 @@ h1, h2, h3, h4, h5 {
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1199.98px) { 
-    .container .thu_container{
+    .container {
         max-width: 960px;
         margin-right: auto;
         margin-left: auto;
@@ -1203,7 +1203,7 @@ h1, h2, h3, h4, h5 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) { 
-    .container .thu_container{
+    .container {
         max-width: 1140px;
         margin-right: auto;
         margin-left: auto;
