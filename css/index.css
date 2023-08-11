@@ -632,7 +632,7 @@ h1, h2, h3, h4, h5 {
     color: #189A46;
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu:before {
+.dark .navbar-expand-lg .navbar-nav .dropdown-menu:before {
     background: #151515;
     border: 1px solid #333;
     border-right: none;
