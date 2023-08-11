@@ -124,6 +124,14 @@ header .fixed-top {
     /* padding: 0.5rem 1rem; */
 }
 
+#portNavbar .dropdown-toggle::after {
+    display: none;
+}
+
+#portNavbar .dropdown-toggle .fa {
+    font-size: 10px;
+}
+
 
 #search .d-sm-flex {
     display: flex !important;
